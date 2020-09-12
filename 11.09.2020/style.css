@@ -1,0 +1,22 @@
+table, th, td {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  tr{
+      background-color:rgb(255, 227, 174);
+  }
+.heading{
+    text-align: center;
+    background-color: rgb(151, 0, 0);
+}
+#yes{
+    margin-left:30px ;
+}
+span{
+    color: blue;
+}
