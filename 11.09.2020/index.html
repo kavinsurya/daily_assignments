@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pan Card</title>
+    <style>
+        table, td, th {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
 </head>
 
 <body>
@@ -326,51 +332,51 @@
         </tr>
 
         <tr>
- <!-- <td colspan="1" style="width: 3%;">
-                <input type="radio" id="yes" name="check" value="yes" required></td> -->
-            <td colspan="6" rowspan="3" style="width: 50%;">
+            <td colspan="1" rowspan="3" style="width: 3%;">
+                <input type="radio" id="yes" name="check" value="yes" required>
+            </td>
+            <td colspan="6" rowspan="3"style="width:50%">
                 11.Telephone no: <br> (Country code is complusary)
             </td>
-            <td colspan="6" style="width: 50%;">country code(ISD)
-                <label for="test">select the option:</label>
-                <select name="test" id="test">
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                    <option value="test3">test3</option>
-                    <option value="test4">test4</option>
+            <td colspan="6" style="width: 50%;">Country code(ISD)
+                
+                <select style="width:300px;">
+                    <option value="" disabled selected> -- please select --</option>
+                    <option value="option1"></option>
                 </select>
-                </form>
+               <tr>
+                   <td >
+                    <input type="radio" id="no" name="number" value="no" required>
+                    <label for="yes">Mobile No:</label>
+                   </td>
+                   <td  >
+                    <input type="radio" id="no" name="number" value="no" required>
+                    <label for="no">Telephone No:</label>
+                   </td>
+                   </td>
+               </tr> 
+               <tr>
+                   <td >
+                    <label>AREA/STD code:</label>
+                    <input type="text" required>
+                   </td>
+                    <td>
+                    <label>Telephone no/Mobile no:</label>
+                    <input type="text" required>
+                   </td>
+               </tr>
             </td>
-
         </tr>
         <tr>
-            <td colspan="6" style="width: 50%;">
-                <input type="radio" id="no" name="number" value="no" required>
-                <label for="yes">Mobile No:</label>
-                <input type="radio" id="no" name="number" value="no" required>
-                <label for="no">Telephone No:</label>
+            <td colspan="1" style="width: 3%;">
             </td>
+                <td colspan="6" style="width: 50%;">
+                    E-mail
+                </td>
+                <td colspan="5" style="width: 47%;">
+                    <input type="text" required>
+                </td>
         </tr>
-        <tr>
-
-            <td colspan="6" style="width: 50%;">
-                <label>AREA/STD code:</label>
-                <input type="text" required>
-                <label>Telephone no/Mobile no:</label>
-                <input type="text" required>
-
-            </td>
-        </tr>
-        <tr>
-            <td colspan="1" style="width: 3%;"></td>
-            <td colspan="6" style="width: 50%;">
-                E-mail
-            </td>
-            <td colspan="5" style="width: 47%;">
-                <input type="text" required>
-            </td>
-        </tr>
-
         <tr>
             <td colspan="1" style="width: 3%;"></td>
             <td colspan="6" style="width: 50%;">
@@ -383,7 +389,6 @@
                 <label for="no">EID:</label>
             </td>
         </tr>
-
         <tr>
             <td colspan="1" style="width: 3%;">
                 <input type="radio" id="yes" name="check" value="yes" required>
