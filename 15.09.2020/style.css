@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.container {
+    margin: auto;
+    width: 1000px;
+    border-radius: 35px;
+    height: 100%;
+    display: block;
+}
+
+.container-min {
+    position: relative;
+    width: 700px;
+    top: 50px;
+    left: 150px;
+    margin: 5px;
+    border-radius: 35px;
+}
+
+.centered {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+.letter {
+    font-size: xx-large;
+    font-family: 'Great Vibes', cursive;
+}
+
+.class1 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('1.jpg');
+    border-radius: 35px 35px 0px 0px;
+}
+
+.content-1 {
+    position: absolute;
+    font-size: x-large;
+    text-align: center;
+    padding: 50px;
+    line-height: 2.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.class2 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    top: 350px;
+    left: 0;
+    background-image: url('2.jpg');
+    transform: skewY(175deg);
+}
+
+.content-2 {
+    position: absolute;
+    top: 330px;
+    font-size: x-large;
+    text-align: center;
+    padding: 50px;
+    line-height: 2.5;
+    font-family: 'Grandstander', cursive;
+}
+
+.class3 {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 700px;
+    left: 0;
+    background-image: url('3.jpg');
+    transform: skewY(175deg);
+}
+
+.content-3 {
+    position: absolute;
+    top: 650px;
+    font-size: x-large;
+    text-align: center;
+    padding: 50px;
+    line-height: 2;
+    font-family: 'Lobster', cursive;
+}
+
+.class4 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    background-image: url('4.jpg');
+    /* transform: skewY(175deg); */
+}
+
+.content-4 {
+    position: absolute;
+    top: 1050px;
+    font-size: x-large;
+    text-align: center;
+    padding: 50px;
+    line-height: 2.5;
+    font-family: 'Lobster', cursive;
+}
+
+
+/* .class5 {
+    width: 100%;
+    height: 400px;
+    background-image: url('7.jpg'); 
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 50px;
+    top: 1500px;
+    left: 0;
+    border-radius: 0px 0px 35px 35px;
+}
+
+.content-5 {
+    position: absolute;
+    top: 1550px;
+    padding: 20px;
+    font-family: 'Beth Ellen';
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 3px;
+} */
