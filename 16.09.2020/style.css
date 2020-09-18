@@ -1,0 +1,22 @@
+.container-class {
+    margin: 20px;
+}
+
+.main-heading {
+    margin: 20px 0px 0px 20px;
+}
+
+.main-heading-1 {
+    padding: 20px;
+    line-height: 2.5;
+}
+
+.content-2 {
+    padding-left: 5px;
+}
+
+.watch-img {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
