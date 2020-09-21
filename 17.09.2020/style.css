@@ -1,2 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+.container {
+    width: 75%;
+    min-height: 1000px;
+    background-color: rgb(249, 251, 255);
+    margin: auto;
+}
+
+.header1 {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    align-content: center
+}
+
+.header2 {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    left: 410px;
+    top: 150px;
+}
+
+.header3 {
+    background-color: white;
+    height: 45px;
+    position: relative;
+    top: 130px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    border: 3px dashed orange;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-name {
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+    padding: 15px 10px 10px 10px;
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.profile-info {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bolder;
+    padding: 2px;
+    border-bottom: 2px solid black;
+}
+
+.verticalLine {
+    border-left: 1px solid black;
+    min-height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.header4 {
+    padding-left: 20px;
+    color: #225565;
+    font-size: x-large;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.left-p {
+    flex: 50%;
+    border-right: 2px solid black
+}
+
+.right-p {
+    flex: 50%;
+}
+
+.profile1-info {
+    padding: 0px 10px 10px 10px;
+    font-size: large;
+    font-family: Kumbh Sans, sans-serif;
+    line-height: 1.2;
+}
+
+ul {
+    line-height: 1.5;
+    font-family: Kumbh Sans, sans-serif;
+}
+
+li {
+    padding-left: 20px
+}
+
+.edu {
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.7;
+}
+
+.work {
+    padding-left: 10px;
+    color: #225565;
+}
+
+.work-content {
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.7;
+}
+
+.footer {
+    padding: 10px;
+}
