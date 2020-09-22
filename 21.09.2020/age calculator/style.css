@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.container {
+    background-color: rgb(90, 75, 223);
+    width: 50%;
+    min-height: 600px;
+    margin: 0px auto;
+}
+
+.header,
+label {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: white;
+}
+
+#eightrandom {
+    width: 30%;
+    height: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 10px;
+    position: relative;
+    margin: 0px auto;
+    top: 100px;
+    text-align: center;
+}
+
+#datePicker {
+    font-size: large;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+#button {
+    width: fit-content;
+    height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    font-size: large;
+    transition-duration: 0.4s;
+    left: 45%;
+    margin-top: 50px;
+}
+
+#button:hover {
+    background-color: #111612;
+    color: white;
+}
+
+.result {
+    font-size: 20px;
+    padding: 50px 20px 20px 20px;
+    margin-top: 70px;
+}

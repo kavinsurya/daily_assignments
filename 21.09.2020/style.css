@@ -1,0 +1,28 @@
+.p1 {
+    float: right;
+}
+
+.container {
+    margin: 50px;
+}
+
+.navbar {
+    height: 60px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+.header6 {
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    padding: 10px;
+}
