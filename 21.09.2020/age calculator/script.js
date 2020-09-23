@@ -46,40 +46,37 @@ document.getElementById('button').addEventListener('click', getCalculated);
 
 function getCalculated() {
     var input = document.getElementById('datePicker').value;
-    if (input != '' || input != undefined) {
-        var formatDate = Date.parse(input);
-        var todayDate = Date.now();
-        if (formatDate <= todayDate) {
-            var milli = todayDate - formatDate;
+    var presentDate = Date.now();
+    var date = Date.parse(input);
 
-            var second = Math.floor(milli / 1000);
-            console.log("second==>" + second);
-            var minute = Math.floor(second / 60);
-            console.log("min==>" + minute);
-            var hour = Math.floor(minute / 60);
-            console.log("hour==>" + hour);
-            var day = Math.floor(hour / 24);
-            console.log("day==>" + day);
-            var month = Math.floor(day / 30);
-            console.log("month==>" + month);
-            var year = Math.floor(day / 365);
-            console.log("year==>" + year);
+    if (date <= presentDate) {
+        var milli = presentDate - date;
+
+        var second = Math.floor(milli / 1000);
+        console.log("second==>" + second);
+        var minute = Math.floor(second / 60);
+        console.log("min==>" + minute);
+        var hour = Math.floor(minute / 60);
+        console.log("hour==>" + hour);
+        var day = Math.floor(hour / 24);
+        console.log("day==>" + day);
+        var month = Math.floor(day / 30);
+        console.log("month==>" + month);
+        var year = Math.floor(day / 365);
+        console.log("year==>" + year);
 
 
-            var result = " Years : " + year +
-                "</br>Months : " + month +
-                "</br>Days : " + day +
-                "</br>Hours : " + hour +
-                "</br>Minutes : " + minute +
-                "</br>Seconds : " + second +
-                "</br>milliseconds : " + milli;
+        var result = " Years : " + year +
+            "</br>Months : " + month +
+            "</br>Days : " + day +
+            "</br>Hours : " + hour +
+            "</br>Minutes : " + minute +
+            "</br>Seconds : " + second +
+            "</br>milliseconds : " + milli;
 
-            document.getElementById('fetchedData1').innerHTML = result;
-        } else {
-            alert(' Enter the valid date')
-        }
+        document.getElementById('fetchedData1').innerHTML = result;
     } else {
-        alert('Select the date for calculation.')
+        alert(' Enter the valid date')
     }
 
 }
