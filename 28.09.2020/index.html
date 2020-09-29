@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Varients</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container ">
+        <form onsubmit="return false;">
+            <h3 class="header">Add New Product</h3>
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label for="productname">Product name</label>
+                    <input type="text" class="form-control" id="productname" name="productname" >
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="price">Base Price</label>
+                    <input type="number" class="form-control" id="price" name="price" >
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description" >
+            </div>
+
+            <h3>Add variants </h3><span class="material-icons" onclick=add();>
+                add_circle_outline
+            </span>
+
+            <div id="box"></div>
+
+            <input type="button" class="btn btn-success" id="add" value="Add" onclick="addVariants()">
+
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
