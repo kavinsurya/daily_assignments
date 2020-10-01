@@ -1,0 +1,14 @@
+.container{
+    margin: 20px auto;
+  
+}
+.card-header{
+    text-align: center;
+}
+.card-text{
+   text-align: center;
+   font-size: 40px;
+}
+#message{
+    color: seagreen;
+}
