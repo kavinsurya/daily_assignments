@@ -42,10 +42,7 @@ function cre(flag, name, capital, region, currName) {
   var divCard = document.createElement("div");
   divCard.setAttribute("class", "card");
 
-  var image = document.createElement("img");
-  image.setAttribute("class", "card-img-top  ");
-  image.src = flag;
-  image.alt = name;
+
 
   var card = document.createElement("div");
   card.setAttribute("class", "card-body");
@@ -58,7 +55,7 @@ function cre(flag, name, capital, region, currName) {
   var dl = createDescription(labels, [capital, region, currName]);
 
   card.append(heading, dl);
-  divCard.append(image, card);
+  divCard.append(card);
   div.appendChild(divCard);
   document.getElementById("countries").append(div);
 }
