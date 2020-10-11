@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body style="  background-color: blanchedalmond; ">
+    <div class="row">
+
+        <div class="col-8">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-3 videoInfo"></div>
+                    <div class="col-6 dropDown">
+                        <label for="Tv">Choose Model  </label>
+                        <select onchange="changeTV()" name="tv" id="Tv">
+                      <option value="" style="text-align: center;">Available TV</option>
+                      <option value="a4">MI 4A</option>
+                      <option value="xpro">MI 4X pro</option>        
+                            </select>
+
+
+
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row displayRow">
+                    <div class="col-12 player">
+                        <video id="video">
+                  <source id="videoPlayer" src="" type="video/mp4" />
+                </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4 ">
+
+            <div class="card bg-dark card-remote" style=" border-radius: 15px 15px 125px 125px">
+                <div class="card-body">
+
+
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+
+                            <a href="#" id="onOff" class="btn remote-button ">
+                                <span class="material-icons icon">
+                                    power_settings_new
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="container main-controls">
+                            <div class="row justify-content-md-center">
+                                <a id="volumeUp" class="btn remote-button ">
+                                    <span class="material-icons plus icon">
+                                        control_point
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a id="rewind" class="btn remote-button ">
+                                <span class="material-icons icon">
+                                    fast_rewind
+                                </span>
+                            </a>
+
+                            <a href="#" onclick="playVideo()" class="btn remote-button ">
+
+                                <span class="material-icons icon">
+                                    play_circle_outline
+                                </span>
+
+                            </a>
+                            <a id="forward" class="btn remote-button ">
+                                <span class="material-icons icon">
+                                    fast_forward
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <a id="volumeDown" class="btn remote-button "><span class="material-icons icon">
+                                        remove_circle_outline
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <h3 class="name">Mi</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

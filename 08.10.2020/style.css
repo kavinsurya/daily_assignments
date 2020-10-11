@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.tv-card {
+    margin: 20px;
+}
+
+.card-remote {
+    width: 250px;
+    height: 650px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.card-body {
+    margin: 0 auto;
+}
+
+.remote-button {
+    padding: 5px;
+    margin: 5px;
+}
+
+.icon {
+    color: blanchedalmond;
+}
+
+.controls {
+    margin-top: 50px;
+}
+
+.name {
+    padding-bottom: 20px;
+    color: lightgrey;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+.player {
+    margin: 30px auto;
+}
+
+.dropDown {
+    border: dashed black;
+    margin: 20px;
+    padding: 5px;
+    position: absolute;
+}
