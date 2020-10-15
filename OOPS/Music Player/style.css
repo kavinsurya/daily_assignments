@@ -1,0 +1,31 @@
+.body {
+    background-color: greenyellow;
+}
+
+.header {
+    text-align: center;
+    margin: 15px;
+}
+
+.card {
+    margin: 20px;
+}
+
+#audioPlayer {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px 0px;
+}
+
+span {
+    float: right;
+    font-size: 20px;
+}
+
+.chng-cursor {
+    cursor: pointer;
+}
+
+.chng-cursor:hover {
+    font-weight: bolder;
+}
