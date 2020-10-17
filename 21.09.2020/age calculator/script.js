@@ -1,3 +1,4 @@
+//Creating DOM baesd html tags
 var container = document.createElement('div')
 container.setAttribute('class', 'container')
 
@@ -43,7 +44,7 @@ document.body.append(container)
 document.getElementById('button').addEventListener('click', getCalculated);
 
 
-
+//Age calculation
 function getCalculated() {
     var input = document.getElementById('datePicker').value;
     var presentDate = Date.now();

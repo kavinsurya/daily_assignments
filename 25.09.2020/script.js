@@ -1,3 +1,4 @@
+//Creating dom Based elements
 var div = document.createElement("div");
 div.setAttribute("class", "container");
 
@@ -28,6 +29,7 @@ var jsonData = [];
 var totalData = 0;
 var pages = 0;
 
+//Getting json data
 function getJson() {
     var request = new XMLHttpRequest();
     var url = "data.json";
@@ -61,6 +63,7 @@ function getJson() {
 }
 getJson();
 
+//displaying the data's
 function getData(start, end) {
     document.getElementById("res").innerHTML = "";
     for (i = start; i <= end; i++) {
@@ -76,7 +79,7 @@ function getData(start, end) {
     }
 }
 
-
+//Adding rows to the table
 function addRow(array, type) {
     var row = document.createElement("tr");
     for (i = 0; i < array.length; i++) {

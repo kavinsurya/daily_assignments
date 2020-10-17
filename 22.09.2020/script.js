@@ -1,3 +1,4 @@
+//Creating DOM baesd html tags
 var container = document.createElement('div');
 container.setAttribute('class', 'container');
 
@@ -32,7 +33,6 @@ input1.name = 'mail'
 input1.setAttribute('id', 'mail');
 input1.setAttribute('class', 'input col-lg-3');
 input1.placeholder = 'Enter your Mail id';
-// var br1 = document.createElement('br')
 
 
 
@@ -87,10 +87,6 @@ input5.setAttribute('id', 'button');
 
 form.append(label, input, label1, input1, label2, input2, br2, input3, label3, input3, label4, input4, br5, input5)
 
-
-
-
-
 container.append(header, form);
 
 
@@ -131,7 +127,7 @@ document.body.append(container, table1);
 
 document.getElementById('button').addEventListener('click', row);
 
-
+//Row Function to insert the data's
 function row() {
     var table = document.getElementById('Table').insertRow(1);
     var row1 = table.insertCell(0);

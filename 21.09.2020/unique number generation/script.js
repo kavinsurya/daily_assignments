@@ -1,3 +1,4 @@
+//Creating DOM baesd html tags
 var container = document.createElement('div')
 container.setAttribute('class', 'container')
 
@@ -18,7 +19,7 @@ document.body.append(container)
 
 document.getElementById('button').addEventListener('click', randomNum);
 
-
+//Creating a unique number
 
 function randomNum() {
     var eightdigitrandom = Math.floor(10000000 + Math.random() * 90000000);
