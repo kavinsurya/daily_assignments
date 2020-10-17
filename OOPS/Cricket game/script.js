@@ -1,3 +1,4 @@
+//Player class
 var Player = /** @class */ (function () {
     function Player(name) {
         this.ballscore = [];
@@ -8,6 +9,7 @@ var Player = /** @class */ (function () {
     }
     return Player;
 }());
+//Team class
 var Team = /** @class */ (function () {
     function Team(name) {
         this.player = [];
@@ -19,22 +21,27 @@ var Team = /** @class */ (function () {
     }
     return Team;
 }());
+//Game Class 
 var Game = /** @class */ (function () {
     function Game() {
         this.team = [new Team("team-1"), new Team("team-2")];
         this.currTeam = this.team[0];
     }
+    //Starting game
     Game.prototype.gameStart = function () {
         document.getElementById('hit-2').setAttribute('disabled', 'true');
         document.getElementById('result').setAttribute('disabled', 'true');
     };
+    //Generating score between 1-6
     Game.prototype.scoreGenerator = function () {
         return Math.floor(Math.random() * 7);
     };
+    //Switching form current team to next team 
     Game.prototype.switchTeam = function (teamno) {
         this.team[teamno - 1] = this.currTeam;
         this.currTeam = this.team[teamno];
     };
+    //Player's score
     Game.prototype.getPlayertotscore = function (pnum) {
         var totscore = 0;
         var arr = this.currTeam.player[pnum - 1].ballscore;
@@ -46,6 +53,7 @@ var Game = /** @class */ (function () {
         this.currTeam.player[pnum - 1].playerscore = totscore;
         return totscore;
     };
+    //Team score
     Game.prototype.getTeamScore = function () {
         var teamscore = 0;
         for (var i = 1; i <= this.currTeam.player.length; i++) {
@@ -54,6 +62,7 @@ var Game = /** @class */ (function () {
         this.currTeam.teamscore = teamscore;
         return teamscore;
     };
+    //finding which team is winner
     Game.prototype.winner = function () {
         var wonby = document.getElementById('wonby');
         var winteam;
@@ -67,11 +76,13 @@ var Game = /** @class */ (function () {
         }
         this.mom(winteam);
     };
+    //To find the man of the match 
     Game.prototype.mom = function (winteam) {
         var highscorer = this.getHighscorer(winteam);
         var mom = document.getElementById('mom');
         mom.innerHTML = 'Player-' + highscorer.player.toString() + ' of Team-' + winteam.teamid;
     };
+    //Finding the highest scorer
     Game.prototype.getHighscorer = function (teamno) {
         var highscorer1 = { player: 0, score: 0 };
         for (var i = 0; i < teamno.player.length; i++) {

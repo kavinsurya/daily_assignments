@@ -1,5 +1,6 @@
 var array1 = [11, 15, 32, 34];
 var array2 = [52, 'kavin', 'surya', 19, 'pollachi'];
+//Grouping the arrray
 var chunk = function (array, pair) {
     var result = [];
     var arr = [];
@@ -17,6 +18,7 @@ var chunk = function (array, pair) {
     return result;
 };
 console.log(chunk(array1, 2));
+//Filtering the string
 var filter = function (array) {
     var result = [];
     for (var i = 0; i < array.length; i++) {
@@ -27,6 +29,7 @@ var filter = function (array) {
     return result;
 };
 console.log(filter(array2));
+//Reduce function
 var reduceFunction = function (array, func, total) {
     if (total === void 0) { total = 0; }
     for (var i = 0; i < array.length; i++) {
@@ -38,6 +41,7 @@ var sum = function (a, b) {
     return a + b;
 };
 console.log("result value : " + reduceFunction(array1, sum));
+//Finding the value
 var find = function (array, cond) {
     var result = [];
     for (var i = 0; i < array.length; i++) {
@@ -48,7 +52,8 @@ var find = function (array, cond) {
     }
     return result;
 };
-console.log("result value :" + find(array1, 28));
+console.log("result value :" + find(array1, 2));
+//Finding the sum
 var sumtion = function (array) {
     var total = 0;
     for (var i = 0; i < array.length; i++) {

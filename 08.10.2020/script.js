@@ -12,6 +12,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var isPlaying = false;
+//Types of Tv's 
 var tvMOdels;
 (function (tvMOdels) {
     tvMOdels["xpro"] = "xpro";
@@ -60,6 +61,7 @@ var TV_class = /** @class */ (function () {
         var onOff = document.querySelector("#onOff");
         onOff.onclick = this.power();
     }
+    //Increase volume
     TV_class.prototype.increaseVolume = function () {
         var _this = this;
         return function () {
@@ -71,6 +73,7 @@ var TV_class = /** @class */ (function () {
             }
         };
     };
+    //Decrease volume
     TV_class.prototype.decreaseVolume = function () {
         var _this = this;
         return function () {
@@ -82,18 +85,21 @@ var TV_class = /** @class */ (function () {
             }
         };
     };
+    //Changing to previous channel 
     TV_class.prototype.previousChannel = function () {
         var _this = this;
         return function () {
             _this.setChannel(_this.channel - 1);
         };
     };
+    //Changing the channel to the next channel
     TV_class.prototype.nextChannel = function () {
         var _this = this;
         return function () {
             _this.setChannel(_this.channel + 1);
         };
     };
+    //initialize the channel number
     TV_class.prototype.setChannel = function (channelNumber) {
         if (channelNumber > 0 && channelNumber <= 50) {
             this.channel = channelNumber;
@@ -119,6 +125,7 @@ var TV_class = /** @class */ (function () {
             console.log("Please select a channel between 1 and 20");
         }
     };
+    //initialize the volume
     TV_class.prototype.setVolume = function (volumeCount) {
         if (volumeCount >= 0 && volumeCount <= 10) {
             this.volume = volumeCount;
@@ -130,6 +137,7 @@ var TV_class = /** @class */ (function () {
             console.log("Volume can be between 0 and 10");
         }
     };
+    //power button
     TV_class.prototype.power = function () {
         var _this = this;
         return function () {
@@ -138,6 +146,7 @@ var TV_class = /** @class */ (function () {
             document.querySelector("video").pause();
         };
     };
+    //Info
     TV_class.prototype.displayInfo = function () {
         var videoInfo = document.querySelector(".videoInfo");
         videoInfo.setAttribute('style', '  border: dashed black;margin: 20px;padding: 5px;text-align:center');
@@ -159,6 +168,7 @@ var xpro = /** @class */ (function (_super) {
     }
     return xpro;
 }(TV_class));
+//Function to play video
 var playVideo = function () {
     if (!isPlaying) {
         isPlaying = !isPlaying;
@@ -169,7 +179,9 @@ var playVideo = function () {
         document.querySelector("video").pause();
     }
 };
+//Change channel 
 var changeChannel = function (pressedButton) { };
+//Channel the Tv model
 var changeTV = function () {
     var selectedTv = document.querySelector("#Tv")
         .value;

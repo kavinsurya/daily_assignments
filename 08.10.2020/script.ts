@@ -1,10 +1,11 @@
 let isPlaying = false;
 
+//Types of Tv's 
 enum tvMOdels {
     xpro = "xpro",
     a4 = "a4",
 }
-
+//Tv details 
 interface TV_Details {
     brand: string;
     refreshRate: number;
@@ -16,6 +17,7 @@ interface sizeDetails {
     width: string;
     height: string;
 }
+
 
 let channels = {
 
@@ -70,6 +72,7 @@ class TV_class {
         onOff.onclick = this.power();
 
     }
+    //Increase volume
     increaseVolume(): () => void {
         return () => {
             if (this.volume < 10) {
@@ -79,6 +82,7 @@ class TV_class {
             }
         };
     }
+    //Decrease volume
 
     decreaseVolume(): () => void {
         return () => {
@@ -89,16 +93,19 @@ class TV_class {
             }
         };
     }
+    //Changing to previous channel 
     previousChannel(): () => void {
         return () => {
             this.setChannel(this.channel - 1);
         };
     }
+    //Changing the channel to the next channel
     nextChannel(): () => void {
         return () => {
             this.setChannel(this.channel + 1);
         };
     }
+    //initialize the channel number
     setChannel(channelNumber: number) {
         if (channelNumber > 0 && channelNumber <= 50) {
             this.channel = channelNumber;
@@ -123,6 +130,7 @@ class TV_class {
             console.log("Please select a channel between 1 and 20");
         }
     }
+    //initialize the volume
     setVolume(volumeCount: number) {
         if (volumeCount >= 0 && volumeCount <= 10) {
             this.volume = volumeCount;
@@ -133,6 +141,7 @@ class TV_class {
           console.log("Volume can be between 0 and 10");
         }
     }
+    //power button
     power(): () => void {
         return () => {
           
@@ -143,7 +152,7 @@ class TV_class {
           
         };
     }
-
+//Info
     displayInfo() {
         let videoInfo = <HTMLDivElement>document.querySelector(".videoInfo");
         videoInfo.setAttribute('style','  border: dashed black;margin: 20px;padding: 5px;text-align:center')
@@ -164,7 +173,7 @@ class xpro extends TV_class {
         super(tvDetails);
     }
 }
-
+//Function to play video
 let playVideo = () => {
     if (!isPlaying) {
         isPlaying = !isPlaying;
@@ -174,9 +183,9 @@ let playVideo = () => {
         (<HTMLVideoElement>document.querySelector("video")).pause();
     }
 };
-
+//Change channel 
 let changeChannel = (pressedButton: string) => { };
-
+//Channel the Tv model
 let changeTV = () => {
     let selectedTv = (<HTMLSelectElement>document.querySelector("#Tv"))
         .value;

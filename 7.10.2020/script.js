@@ -9,12 +9,15 @@ var PetsAvailability = /** @class */ (function () {
         this.pets = new Array();
         (_a = this.pets).push.apply(_a, petsAvailable);
     }
+    //inserting new pets
     PetsAvailability.prototype.insert = function (pet) {
         this.pets.push(pet);
     };
+    //function to list the pets 
     PetsAvailability.prototype.showPets = function () {
         console.log(this.pets);
     };
+    //Checkin the requests
     PetsAvailability.prototype.checkRequests = function (requestArray) {
         for (var i = 0; i < requestArray.length; i++) {
             var available = void 0;
@@ -35,6 +38,7 @@ var PetsAvailability = /** @class */ (function () {
     };
     return PetsAvailability;
 }());
+//initializing the pets 
 var petsAvailable = new PetsAvailability([
     { type: "Fish", available: 15 },
     { type: "Dog", available: 32 },
@@ -48,14 +52,17 @@ var PetRequests = /** @class */ (function () {
         this.requests = new Array();
         (_a = this.requests).push.apply(_a, initialRequests);
     }
+    //adding new request
     PetRequests.prototype.add = function (newRequest) {
         this.requests.push(newRequest);
     };
+    //Checking the Availability
     PetRequests.prototype.checkAvailability = function () {
         petsAvailable.checkRequests(this.requests);
     };
     return PetRequests;
 }());
+//Creating new request
 var request1 = new PetRequests([
     {
         type: "rabbit",

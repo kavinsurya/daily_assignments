@@ -15,15 +15,16 @@ class PetsAvailability {
     constructor(petsAvailable: Array<Pet>) {
         this.pets.push(...petsAvailable);
     }
+    //inserting new pets
 
     insert(pet: Pet) {
         this.pets.push(pet);
     }
-
+    //function to list the pets 
     showPets() {
         console.log(this.pets);
     }
-
+    //Checkin the requests
     checkRequests(requestArray: Array<petDetails>) {
         for (let i = 0; i < requestArray.length; i++) {
             let available;
@@ -44,6 +45,7 @@ class PetsAvailability {
     }
 }
 
+//initializing the pets 
 let petsAvailable = new PetsAvailability([
     { type: "Fish", available: 15 },
     { type: "Dog", available: 32 },
@@ -60,25 +62,24 @@ class PetRequests {
     constructor(initialRequests: Array<petDetails>) {
         this.requests.push(...initialRequests);
     }
-
+//adding new request
     add(newRequest: petDetails) {
         this.requests.push(newRequest);
     }
 
-
+//Checking the Availability
     checkAvailability() {
         petsAvailable.checkRequests(this.requests);
     }
 }
-
+//Creating new request
 let request1 = new PetRequests([
     {
         type: "rabbit",
         count: 4,
     },
-   
+
 ]);
 
-  request1.add({ type: "Love birds", count: 2 });
-
+request1.add({ type: "Love birds", count: 2 });
 request1.checkAvailability();
