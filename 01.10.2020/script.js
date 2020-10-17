@@ -1,3 +1,4 @@
+//Fetching data for rest countries
 function data() {
     fetch('"https://restcountries.eu/rest/v2/all?fields=name;capital;region;currencies";')
         .then(response => response.json())
@@ -13,6 +14,7 @@ function data() {
 
 }
 
+//fetching  weather for particular city
 function getWeather(city) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=bc11586955a2d7c3c259b26c66d19ecc')
         .then(response => response.json())
@@ -42,13 +44,13 @@ function getWeather(city) {
 
         })
 }
-
+//getting weather for a particualr city 
 function weather(city) {
     document.getElementById('weather' + city).innerHTML = '';
     getWeather(city);
 }
 
-
+//Data
 function data(id) {
     var request = new XMLHttpRequest();
     var url =
@@ -85,6 +87,7 @@ data()
         console.log(error);
     });
 
+//Creating card for displaying the data's
 function cre(name, capital, region, currName) {
     var div = document.createElement("div");
     div.className = "col";
@@ -122,6 +125,7 @@ function cre(name, capital, region, currName) {
     document.getElementById("countries").append(div);
 }
 
+//To create discription
 function createDescription(label, value) {
     var dl = document.createElement("dl");
 
@@ -140,4 +144,4 @@ function createDescription(label, value) {
     return dl;
 }
 
-data()
+data();
