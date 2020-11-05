@@ -2,13 +2,13 @@ const os =require("os");
 const fs =require("fs");
 const http =require("http");
 
-
-fs.mkdir("New Folder",function (err) {
+var date = new Date();
+fs.mkdir("Date-Time",function (err) {
     if (err) {
         throw err;
     }
     
-    fs.writeFile("New Folder/New file.txt","Hi New File Created",function (err) {
+    fs.writeFile("Date-Time/Date-time.txt",`${date}`,function (err) {
         if (err) {
             console.log("Error");
         }
