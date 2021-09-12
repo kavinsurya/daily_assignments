@@ -1,0 +1,11 @@
+/* body{
+    background-color: aquamarine;
+} */
+
+.container{
+    margin: 20px auto;
+    
+}
+.name{
+    cursor: default;
+}
